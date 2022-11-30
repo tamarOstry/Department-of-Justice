@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Data } from '@angular/router';
 import { AppService } from '../app.service';
 
 @Component({
@@ -8,10 +9,10 @@ import { AppService } from '../app.service';
 })
 export class SettingsBarComponent {
   myDate:Date = new Date();
-
+  myDateEbrue:Date=new Date();
   constructor(private _appService: AppService) {
     this._appService.getCurrentDate();
-    this.myDate=this._appService.myDate;
+    this.myDateEbrue=this._appService.myDateEbrue;
    }
 
 }

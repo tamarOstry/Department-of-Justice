@@ -10,12 +10,9 @@ import { AppService } from '../app.service';
 })
 export class AppBarComponent {
   lotsOfTabs=new Array<string>("דוחות","מבואה","הנצחה","סיורים-מערכת מקוונת","ימי עיון עם נרשמים","הכשרות","כנסים","סמינרים","השתלמויות","רשימת נרשמים","הזמנות","משאבים","נותני שירות","חשבונות","מוסדות");
-  myDate:Date = new Date();
   name:String='מוסדות'
 
-  constructor(private _appService: AppService,private router: Router) {
-    this._appService.getCurrentDate();
-    this.myDate=this._appService.myDate;
+  constructor(private router: Router) {
    }
 
    goToInstitution(changeEvent: Event):void{

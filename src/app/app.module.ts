@@ -16,6 +16,14 @@ import { AppService } from './app.service';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
+//:חילקתי את הקומפוננטות בדרך הבאה
+//את הניתובים למעלה ואת הסרגל הערות כל אחד בקומפוננטה נפרדת תחת אפ מודול
+//כדי לאפשר להשתמש בכל אחד בנפרד
+//:מלבד זאת יצאתי מודול של בית ספר ובתוכו את כל מה שתחתיו
+//קומפוננטה של המוסדות
+//קומפוננטה של סרגל בכלים על הטבלה-בנפרד לצורך שימוש חוזר בקומפ' אחרות
+//וקומפוננטה של איפה אני שמראה לאיפה נכנסו ע"י שליחה של אינפוט מהאבא לפי מי שנלחץ בטאבים
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -2,5 +2,9 @@
     "/api/*":  {
         "target": "https://localhost:44316",
         "secure": false
+    },
+    "/etc/*":{
+        "target": "https://www.hebcal.com/",
+        "secure": false
     }
 }
