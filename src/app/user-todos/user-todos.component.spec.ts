@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SettingsBarComponent } from './settings-bar.component';
+import { UserTodosComponent } from './user-todos.component';
 
-describe('SettingsBarComponent', () => {
-  let component: SettingsBarComponent;
-  let fixture: ComponentFixture<SettingsBarComponent>;
+describe('UserTodosComponent', () => {
+  let component: UserTodosComponent;
+  let fixture: ComponentFixture<UserTodosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SettingsBarComponent ]
+      declarations: [ UserTodosComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SettingsBarComponent);
+    fixture = TestBed.createComponent(UserTodosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

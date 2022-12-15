@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InstitutionComponent } from './school/institution/institution.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { UserTodosComponent } from './user-todos/user-todos.component';
 
 const routes: Routes = [
-  { path: "institution", component: InstitutionComponent },
-  ///:whereYou
+{ path: "userTodos", component:UserTodosComponent},
+{ path: "userDetails", component:UserDetailsComponent},
 ];
 
 @NgModule({

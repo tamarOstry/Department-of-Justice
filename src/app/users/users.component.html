@@ -1,0 +1,12 @@
+<!-- <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let user of users">
+        <a href="" (click)="getMyTodos(user.id)">{{user.name}}</a>
+        <button (click)="readUserDetails(user.id)">read more</button>
+    </mat-list-item>
+</mat-list> -->
+<ul>
+    <li role="listitem" *ngFor="let user of users">
+        <ul (click)="getMyTodos(user.id)">{{user.name}}</ul>
+        <button (click)="readUserDetails(user.id)">read more</button>
+    </li>
+</ul>
